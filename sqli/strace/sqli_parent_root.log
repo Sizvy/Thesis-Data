@@ -1,0 +1,69 @@
+pselect6(1, [0], NULL, NULL, NULL, {[], 8}) = 1 (in [0])
+read(0, "\33", 1)                       = 1
+pselect6(1, [0], NULL, NULL, NULL, {[], 8}) = 1 (in [0])
+read(0, "[", 1)                         = 1
+pselect6(1, [0], NULL, NULL, NULL, {[], 8}) = 1 (in [0])
+read(0, "A", 1)                         = 1
+write(2, "mysql -u root -pdees", 20)    = 20
+pselect6(1, [0], NULL, NULL, NULL, {[], 8}) = 1 (in [0])
+read(0, "\r", 1)                        = 1
+write(2, "\n", 1)                       = 1
+ioctl(0, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigaction(SIGINT, {sa_handler=0x55f2043179a0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x55f204317470, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f890f561840}, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x55f204317d60, sa_mask=[HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0x55f204317d60, sa_mask=[HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x55f204317460, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f890f561840}, {sa_handler=0x55f20436c9f0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x55f2043179a0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f2043179a0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [INT CHLD], [], 8) = 0
+pipe([3, 4])                            = 0
+clone(child_stack=NULL, flags=CLONE_CHILD_CLEARTID|CLONE_CHILD_SETTID|SIGCHLD, child_tidptr=0x7f890f527a10) = 223
+setpgid(223, 223)                       = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+close(3)                                = 0
+close(4)                                = 0
+ioctl(255, TIOCGPGRP, [223])            = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD], [], 8) = 0
+wait4(-1, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], WSTOPPED|WCONTINUED, NULL) = 223
+rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [CHLD], 8) = 0
+ioctl(255, TIOCSPGRP, [213])            = 0
+rt_sigprocmask(SIG_SETMASK, [CHLD], NULL, 8) = 0
+ioctl(255, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(255, TIOCGWINSZ, {ws_row=34, ws_col=141, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=223, si_uid=0, si_status=0, si_utime=1, si_stime=0} ---
+wait4(-1, 0x7fff39e46650, WNOHANG|WSTOPPED|WCONTINUED, NULL) = -1 ECHILD (No child processes)
+rt_sigreturn({mask=[]})                 = 0
+rt_sigaction(SIGINT, {sa_handler=0x55f2043179a0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f2043179a0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [CHLD TSTP TTIN TTOU], [], 8) = 0
+ioctl(255, TIOCSPGRP, [213])            = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x55f2043179a0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f2043179a0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+fcntl(0, F_GETFL)                       = 0x8002 (flags O_RDWR|O_LARGEFILE)
+ioctl(0, TIOCGWINSZ, {ws_row=34, ws_col=141, ws_xpixel=0, ws_ypixel=0}) = 0
+ioctl(0, TIOCSWINSZ, {ws_row=34, ws_col=141, ws_xpixel=0, ws_ypixel=0}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT ALRM TERM TSTP TTIN TTOU], [], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f2043179a0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f204317470, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f204317d60, sa_mask=[HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGALRM, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f204317d60, sa_mask=[HUP INT ILL TRAP ABRT BUS FPE USR1 SEGV USR2 PIPE ALRM TERM XCPU XFSZ VTALRM SYS], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGTTOU, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGTTOU, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGTTIN, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigaction(SIGTTIN, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, {sa_handler=0x55f20436d590, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7f890f561840}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x55f20436c9f0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f890f561840}, {sa_handler=0x55f204317460, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7f890f561840}, 8) = 0
+write(2, "root@48007ac18e71:/# ", 21)   = 21
+pselect6(1, [0], NULL, NULL, NULL, {[], 8} <detached ...>

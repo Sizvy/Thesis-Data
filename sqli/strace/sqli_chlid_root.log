@@ -1,0 +1,509 @@
+read(0, "s", 1)                         = 1
+write(1, "s", 1)                        = 1
+read(0, "h", 1)                         = 1
+write(1, "h", 1)                        = 1
+read(0, "o", 1)                         = 1
+write(1, "o", 1)                        = 1
+read(0, "w", 1)                         = 1
+write(1, "w", 1)                        = 1
+read(0, " ", 1)                         = 1
+write(1, " ", 1)                        = 1
+read(0, "d", 1)                         = 1
+write(1, "d", 1)                        = 1
+read(0, "a", 1)                         = 1
+write(1, "a", 1)                        = 1
+read(0, "t", 1)                         = 1
+write(1, "t", 1)                        = 1
+read(0, "a", 1)                         = 1
+write(1, "a", 1)                        = 1
+read(0, "b", 1)                         = 1
+write(1, "b", 1)                        = 1
+read(0, "a", 1)                         = 1
+write(1, "a", 1)                        = 1
+read(0, "s", 1)                         = 1
+write(1, "s", 1)                        = 1
+read(0, "e", 1)                         = 1
+write(1, "e", 1)                        = 1
+read(0, "s", 1)                         = 1
+write(1, "s", 1)                        = 1
+read(0, ";", 1)                         = 1
+write(1, ";", 1)                        = 1
+read(0, "\n", 1)                        = 1
+write(1, "\n", 1)                       = 1
+ioctl(0, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM CONT TSTP WINCH], [], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x557b62735460, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x557b627335e0, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x557b62735490, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGCONT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x557b62730ba0, sa_mask=[WINCH], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+times({tms_utime=0, tms_stime=0, tms_cutime=0, tms_cstime=0}) = 1718491658
+sendto(3, "\17\0\0\0\3show databases", 19, 0, NULL, 0) = 19
+recvfrom(3, "\1\0\0\1\0016\0\0\2\3def\0\10SCHEMATA\10schemata"..., 16384, 0, NULL, NULL) = 155
+times({tms_utime=0, tms_stime=0, tms_cutime=0, tms_cstime=0}) = 1718491658
+write(1, "+--------------------+\n", 23) = 23
+write(1, "| Database           |\n", 23) = 23
+write(1, "+--------------------+\n", 23) = 23
+write(1, "| information_schema |\n", 23) = 23
+write(1, "| mysql              |\n", 23) = 23
+write(1, "| performance_schema |\n", 23) = 23
+write(1, "| sqllab_users       |\n", 23) = 23
+write(1, "| sys                |\n", 23) = 23
+write(1, "+--------------------+\n", 23) = 23
+write(1, "5 rows in set (0.00 sec)\n", 25) = 25
+write(1, "\n", 1)                       = 1
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=127, ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM CONT TSTP WINCH], [], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b62735460, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b627335e0, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b62735490, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGCONT, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b62730ba0, sa_mask=[WINCH], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+ioctl(0, TIOCGWINSZ, {ws_row=34, ws_col=141, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+write(1, "mysql> ", 7)                  = 7
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+read(0, "u", 1)                         = 1
+write(1, "u", 1)                        = 1
+read(0, "s", 1)                         = 1
+write(1, "s", 1)                        = 1
+read(0, "e", 1)                         = 1
+write(1, "e", 1)                        = 1
+read(0, " ", 1)                         = 1
+write(1, " ", 1)                        = 1
+read(0, "i", 1)                         = 1
+write(1, "i", 1)                        = 1
+read(0, "n", 1)                         = 1
+write(1, "n", 1)                        = 1
+read(0, "f", 1)                         = 1
+write(1, "f", 1)                        = 1
+read(0, "o", 1)                         = 1
+write(1, "o", 1)                        = 1
+read(0, "r", 1)                         = 1
+write(1, "r", 1)                        = 1
+read(0, "m", 1)                         = 1
+write(1, "m", 1)                        = 1
+read(0, "a", 1)                         = 1
+write(1, "a", 1)                        = 1
+read(0, "\t", 1)                        = 1
+read(0, "t", 1)                         = 1
+write(1, "t", 1)                        = 1
+read(0, "i", 1)                         = 1
+write(1, "i", 1)                        = 1
+read(0, "o", 1)                         = 1
+write(1, "o", 1)                        = 1
+read(0, "n", 1)                         = 1
+write(1, "n", 1)                        = 1
+read(0, ")", 1)                         = 1
+write(1, ")", 1)                        = 1
+read(0, "s", 1)                         = 1
+write(1, "s", 1)                        = 1
+read(0, "\177", 1)                      = 1
+write(1, "\r\33[24G\33[K", 9)           = 9
+read(0, "\177", 1)                      = 1
+write(1, "\r\33[23G\33[K", 9)           = 9
+read(0, "_", 1)                         = 1
+write(1, "_", 1)                        = 1
+read(0, "s", 1)                         = 1
+write(1, "s", 1)                        = 1
+read(0, "h", 1)                         = 1
+write(1, "h", 1)                        = 1
+read(0, "c", 1)                         = 1
+write(1, "c", 1)                        = 1
+read(0, "\177", 1)                      = 1
+write(1, "\r\33[26G\33[K", 9)           = 9
+read(0, "e", 1)                         = 1
+write(1, "e", 1)                        = 1
+read(0, "\177", 1)                      = 1
+write(1, "\r\33[26G\33[K", 9)           = 9
+read(0, "\177", 1)                      = 1
+write(1, "\r\33[25G\33[K", 9)           = 9
+read(0, "c", 1)                         = 1
+write(1, "c", 1)                        = 1
+read(0, "h", 1)                         = 1
+write(1, "h", 1)                        = 1
+read(0, "e", 1)                         = 1
+write(1, "e", 1)                        = 1
+read(0, "m", 1)                         = 1
+write(1, "m", 1)                        = 1
+read(0, "a", 1)                         = 1
+write(1, "a", 1)                        = 1
+read(0, "\n", 1)                        = 1
+write(1, "\n", 1)                       = 1
+ioctl(0, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM CONT TSTP WINCH], [], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x557b62735460, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x557b627335e0, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x557b62735490, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGCONT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x557b62730ba0, sa_mask=[WINCH], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+sendto(3, "\22\0\0\0\3SELECT DATABASE()", 22, 0, NULL, 0) = 22
+recvfrom(3, "\1\0\0\1\1 \0\0\2\3def\0\0\0\nDATABASE()\0\f\10\0\""..., 16384, 0, NULL, NULL) = 57
+sendto(3, "\23\0\0\0\2information_schema", 23, 0, NULL, 0) = 23
+recvfrom(3, "\36\0\0\1\0\0\0\2@\0\0\0\25\1\23\22information_sche"..., 16384, 0, NULL, NULL) = 34
+brk(0x557b63dc7000)                     = 0x557b63dc7000
+brk(0x557b63df7000)                     = 0x557b63df7000
+sendto(3, "\17\0\0\0\3show databases", 19, 0, NULL, 0) = 19
+recvfrom(3, "\1\0\0\1\0016\0\0\2\3def\0\10SCHEMATA\10schemata"..., 16384, 0, NULL, NULL) = 155
+sendto(3, "\f\0\0\0\3show tables", 16, 0, NULL, 0) = 16
+recvfrom(3, "\1\0\0\1\1Z\0\0\2\3def\0\6TABLES\6tables\34Tab"..., 16384, 0, NULL, NULL) = 1788
+write(1, "Reading table information for co"..., 131) = 131
+mmap(NULL, 143360, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6254db000
+sendto(3, "#\0\0\0\4ADMINISTRABLE_ROLE_AUTHORIZ"..., 39, 0, NULL, 0) = 39
+recvfrom(3, "s\0\0\1\3def\22information_schema!ADMI"..., 16384, 0, NULL, NULL) = 1168
+sendto(3, "\22\0\0\0\4APPLICABLE_ROLES\0", 22, 0, NULL, 0) = 22
+recvfrom(3, "Q\0\0\1\3def\22information_schema\20APPL"..., 16384, 0, NULL, NULL) = 862
+sendto(3, "\20\0\0\0\4CHARACTER_SETS\0", 20, 0, NULL, 0) = 20
+recvfrom(3, "i\0\0\1\3def\22information_schema\16CHAR"..., 16384, 0, NULL, NULL) = 414
+sendto(3, "\23\0\0\0\4CHECK_CONSTRAINTS\0", 23, 0, NULL, 0) = 23
+recvfrom(3, "o\0\0\1\3def\22information_schema\21CHEC"..., 16384, 0, NULL, NULL) = 451
+sendto(3, "\f\0\0\0\4COLLATIONS\0", 16, 0, NULL, 0) = 16
+recvfrom(3, "Y\0\0\1\3def\22information_schema\nCOLL"..., 16384, 0, NULL, NULL) = 627
+sendto(3, "'\0\0\0\4COLLATION_CHARACTER_SET_APP"..., 43, 0, NULL, 0) = 43
+recvfrom(3, "\217\0\0\1\3def\22information_schema%COLL"..., 16384, 0, NULL, NULL) = 313
+sendto(3, "\t\0\0\0\4COLUMNS\0", 13, 0, NULL, 0) = 13
+recvfrom(3, "Q\0\0\1\3def\22information_schema\7COLU"..., 16384, 0, NULL, NULL) = 1914
+sendto(3, "\24\0\0\0\4COLUMNS_EXTENSIONS\0", 24, 0, NULL, 0) = 24
+recvfrom(3, "g\0\0\1\3def\22information_schema\22COLU"..., 16384, 0, NULL, NULL) = 681
+sendto(3, "\23\0\0\0\4COLUMN_PRIVILEGES\0", 23, 0, NULL, 0) = 23
+recvfrom(3, "Y\0\0\1\3def\22information_schema\21COLU"..., 16384, 0, NULL, NULL) = 722
+sendto(3, "\23\0\0\0\4COLUMN_STATISTICS\0", 23, 0, NULL, 0) = 23
+recvfrom(3, "a\0\0\1\3def\22information_schema\21COLU"..., 16384, 0, NULL, NULL) = 413
+sendto(3, "\17\0\0\0\4ENABLED_ROLES\0", 19, 0, NULL, 0) = 19
+recvfrom(3, "U\0\0\1\3def\22information_schema\rENAB"..., 16384, 0, NULL, NULL) = 375
+sendto(3, "\t\0\0\0\4ENGINES\0", 13, 0, NULL, 0) = 13
+recvfrom(3, "C\0\0\1\3def\22information_schema\7ENGI"..., 16384, 0, NULL, NULL) = 453
+sendto(3, "\10\0\0\0\4EVENTS\0", 12, 0, NULL, 0) = 12
+recvfrom(3, "O\0\0\1\3def\22information_schema\6EVEN"..., 16384, 0, NULL, NULL) = 2051
+sendto(3, "\7\0\0\0\4FILES\0", 11, 0, NULL, 0) = 11
+recvfrom(3, "B\0\0\1\3def\22information_schema\5FILE"..., 16384, 0, NULL, NULL) = 3003
+mmap(NULL, 212992, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6254a7000
+sendto(3, "\24\0\0\0\4INNODB_BUFFER_PAGE\0", 24, 0, NULL, 0) = 24
+recvfrom(3, "\\\0\0\1\3def\22information_schema\22INNO"..., 16384, 0, NULL, NULL) = 2068
+sendto(3, "\30\0\0\0\4INNODB_BUFFER_PAGE_LRU\0", 28, 0, NULL, 0) = 28
+recvfrom(3, "d\0\0\1\3def\22information_schema\26INNO"..., 16384, 0, NULL, NULL) = 2236
+sendto(3, "\32\0\0\0\4INNODB_BUFFER_POOL_STATS\0", 30, 0, NULL, 0) = 30
+recvfrom(3, "h\0\0\1\3def\22information_schema\30INNO"..., 16384, 0, NULL, NULL) = 4155
+sendto(3, "\27\0\0\0\4INNODB_CACHED_INDEXES\0", 27, 0, NULL, 0) = 27
+recvfrom(3, "d\0\0\1\3def\22information_schema\25INNO"..., 16384, 0, NULL, NULL) = 335
+sendto(3, "\f\0\0\0\4INNODB_CMP\0", 16, 0, NULL, 0) = 16
+recvfrom(3, "P\0\0\1\3def\22information_schema\nINNO"..., 16384, 0, NULL, NULL) = 563
+sendto(3, "\17\0\0\0\4INNODB_CMPMEM\0", 19, 0, NULL, 0) = 19
+recvfrom(3, "V\0\0\1\3def\22information_schema\rINNO"..., 16384, 0, NULL, NULL) = 599
+sendto(3, "\25\0\0\0\4INNODB_CMPMEM_RESET\0", 25, 0, NULL, 0) = 25
+recvfrom(3, "b\0\0\1\3def\22information_schema\23INNO"..., 16384, 0, NULL, NULL) = 671
+sendto(3, "\26\0\0\0\4INNODB_CMP_PER_INDEX\0", 26, 0, NULL, 0) = 26
+recvfrom(3, "k\0\0\1\3def\22information_schema\24INNO"..., 16384, 0, NULL, NULL) = 900
+sendto(3, "\34\0\0\0\4INNODB_CMP_PER_INDEX_RESET\0", 32, 0, NULL, 0) = 32
+recvfrom(3, "w\0\0\1\3def\22information_schema\32INNO"..., 16384, 0, NULL, NULL) = 996
+sendto(3, "\22\0\0\0\4INNODB_CMP_RESET\0", 22, 0, NULL, 0) = 22
+recvfrom(3, "\\\0\0\1\3def\22information_schema\20INNO"..., 16384, 0, NULL, NULL) = 635
+sendto(3, "\20\0\0\0\4INNODB_COLUMNS\0", 20, 0, NULL, 0) = 20
+recvfrom(3, "V\0\0\1\3def\22information_schema\16INNO"..., 16384, 0, NULL, NULL) = 707
+sendto(3, "\22\0\0\0\4INNODB_DATAFILES\0", 22, 0, NULL, 0) = 22
+recvfrom(3, "S\0\0\1\3def\22information_schema\20INNO"..., 16384, 0, NULL, NULL) = 183
+sendto(3, "\17\0\0\0\4INNODB_FIELDS\0", 19, 0, NULL, 0) = 19
+recvfrom(3, "S\0\0\1\3def\22information_schema\rINNO"..., 16384, 0, NULL, NULL) = 255
+sendto(3, "\20\0\0\0\4INNODB_FOREIGN\0", 20, 0, NULL, 0) = 20
+recvfrom(3, "I\0\0\1\3def\22information_schema\16INNO"..., 16384, 0, NULL, NULL) = 434
+sendto(3, "\25\0\0\0\4INNODB_FOREIGN_COLS\0", 25, 0, NULL, 0) = 25
+recvfrom(3, "S\0\0\1\3def\22information_schema\23INNO"..., 16384, 0, NULL, NULL) = 402
+sendto(3, "\31\0\0\0\4INNODB_FT_BEING_DELETED\0", 29, 0, NULL, 0) = 29
+recvfrom(3, "d\0\0\1\3def\22information_schema\27INNO"..., 16384, 0, NULL, NULL) = 115
+sendto(3, "\22\0\0\0\4INNODB_FT_CONFIG\0", 22, 0, NULL, 0) = 22
+recvfrom(3, "O\0\0\1\3def\22information_schema\20INNO"..., 16384, 0, NULL, NULL) = 181
+sendto(3, "\34\0\0\0\4INNODB_FT_DEFAULT_STOPWORD\0", 32, 0, NULL, 0) = 32
+recvfrom(3, "g\0\0\1\3def\22information_schema\32INNO"..., 16384, 0, NULL, NULL) = 118
+sendto(3, "\23\0\0\0\4INNODB_FT_DELETED\0", 23, 0, NULL, 0) = 23
+recvfrom(3, "X\0\0\1\3def\22information_schema\21INNO"..., 16384, 0, NULL, NULL) = 103
+sendto(3, "\27\0\0\0\4INNODB_FT_INDEX_CACHE\0", 27, 0, NULL, 0) = 27
+recvfrom(3, "[\0\0\1\3def\22information_schema\25INNO"..., 16384, 0, NULL, NULL) = 638
+sendto(3, "\27\0\0\0\4INNODB_FT_INDEX_TABLE\0", 27, 0, NULL, 0) = 27
+recvfrom(3, "[\0\0\1\3def\22information_schema\25INNO"..., 16384, 0, NULL, NULL) = 638
+mmap(NULL, 315392, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd62545a000
+sendto(3, "\20\0\0\0\4INNODB_INDEXES\0", 20, 0, NULL, 0) = 20
+recvfrom(3, "V\0\0\1\3def\22information_schema\16INNO"..., 16384, 0, NULL, NULL) = 720
+sendto(3, "\20\0\0\0\4INNODB_METRICS\0", 20, 0, NULL, 0) = 20
+recvfrom(3, "M\0\0\1\3def\22information_schema\16INNO"..., 16384, 0, NULL, NULL) = 1584
+sendto(3, "!\0\0\0\4INNODB_SESSION_TEMP_TABLESP"..., 37, 0, NULL, 0) = 37
+recvfrom(3, "l\0\0\1\3def\22information_schema\37INNO"..., 16384, 0, NULL, NULL) = 710
+sendto(3, "\17\0\0\0\4INNODB_TABLES\0", 19, 0, NULL, 0) = 19
+recvfrom(3, "T\0\0\1\3def\22information_schema\rINNO"..., 16384, 0, NULL, NULL) = 800
+sendto(3, "\24\0\0\0\4INNODB_TABLESPACES\0", 24, 0, NULL, 0) = 24
+recvfrom(3, "X\0\0\1\3def\22information_schema\22INNO"..., 16384, 0, NULL, NULL) = 1419
+sendto(3, "\32\0\0\0\4INNODB_TABLESPACES_BRIEF\0", 30, 0, NULL, 0) = 30
+recvfrom(3, "c\0\0\1\3def\22information_schema\30INNO"..., 16384, 0, NULL, NULL) = 530
+sendto(3, "\23\0\0\0\4INNODB_TABLESTATS\0", 23, 0, NULL, 0) = 23
+recvfrom(3, "\\\0\0\1\3def\22information_schema\21INNO"..., 16384, 0, NULL, NULL) = 931
+sendto(3, "\30\0\0\0\4INNODB_TEMP_TABLE_INFO\0", 28, 0, NULL, 0) = 28
+recvfrom(3, "f\0\0\1\3def\22information_schema\26INNO"..., 16384, 0, NULL, NULL) = 416
+sendto(3, "\f\0\0\0\4INNODB_TRX\0", 16, 0, NULL, 0) = 16
+recvfrom(3, "J\0\0\1\3def\22information_schema\nINNO"..., 16384, 0, NULL, NULL) = 2553
+sendto(3, "\20\0\0\0\4INNODB_VIRTUAL\0", 20, 0, NULL, 0) = 20
+recvfrom(3, "V\0\0\1\3def\22information_schema\16INNO"..., 16384, 0, NULL, NULL) = 271
+sendto(3, "\n\0\0\0\4KEYWORDS\0", 14, 0, NULL, 0) = 14
+recvfrom(3, "A\0\0\1\3def\22information_schema\10KEYW"..., 16384, 0, NULL, NULL) = 158
+sendto(3, "\22\0\0\0\4KEY_COLUMN_USAGE\0", 22, 0, NULL, 0) = 22
+recvfrom(3, "m\0\0\1\3def\22information_schema\20KEY_"..., 16384, 0, NULL, NULL) = 1351
+sendto(3, "\21\0\0\0\4OPTIMIZER_TRACE\0", 21, 0, NULL, 0) = 21
+recvfrom(3, "Q\0\0\1\3def\22information_schema\17OPTI"..., 16384, 0, NULL, NULL) = 445
+sendto(3, "\f\0\0\0\4PARAMETERS\0", 16, 0, NULL, 0) = 16
+recvfrom(3, "]\0\0\1\3def\22information_schema\nPARA"..., 16384, 0, NULL, NULL) = 1563
+sendto(3, "\f\0\0\0\4PARTITIONS\0", 16, 0, NULL, 0) = 16
+recvfrom(3, "W\0\0\1\3def\22information_schema\nPART"..., 16384, 0, NULL, NULL) = 2446
+sendto(3, "\t\0\0\0\4PLUGINS\0", 13, 0, NULL, 0) = 13
+recvfrom(3, "M\0\0\1\3def\22information_schema\7PLUG"..., 16384, 0, NULL, NULL) = 980
+sendto(3, "\r\0\0\0\4PROCESSLIST\0", 17, 0, NULL, 0) = 17
+recvfrom(3, "D\0\0\1\3def\22information_schema\vPROC"..., 16384, 0, NULL, NULL) = 613
+sendto(3, "\v\0\0\0\4PROFILING\0", 15, 0, NULL, 0) = 15
+recvfrom(3, "L\0\0\1\3def\22information_schema\tPROF"..., 16384, 0, NULL, NULL) = 1573
+sendto(3, "\31\0\0\0\4REFERENTIAL_CONSTRAINTS\0", 29, 0, NULL, 0) = 29
+recvfrom(3, "{\0\0\1\3def\22information_schema\27REFE"..., 16384, 0, NULL, NULL) = 1406
+sendto(3, "\21\0\0\0\4RESOURCE_GROUPS\0", 21, 0, NULL, 0) = 21
+recvfrom(3, "m\0\0\1\3def\22information_schema\17RESO"..., 16384, 0, NULL, NULL) = 560
+sendto(3, "\24\0\0\0\4ROLE_COLUMN_GRANTS\0", 24, 0, NULL, 0) = 24
+recvfrom(3, "[\0\0\1\3def\22information_schema\22ROLE"..., 16384, 0, NULL, NULL) = 1041
+sendto(3, "\25\0\0\0\4ROLE_ROUTINE_GRANTS\0", 25, 0, NULL, 0) = 25
+recvfrom(3, "]\0\0\1\3def\22information_schema\23ROLE"..., 16384, 0, NULL, NULL) = 1305
+sendto(3, "\23\0\0\0\4ROLE_TABLE_GRANTS\0", 23, 0, NULL, 0) = 23
+recvfrom(3, "Y\0\0\1\3def\22information_schema\21ROLE"..., 16384, 0, NULL, NULL) = 920
+sendto(3, "\n\0\0\0\4ROUTINES\0", 14, 0, NULL, 0) = 14
+recvfrom(3, "S\0\0\1\3def\22information_schema\10ROUT"..., 16384, 0, NULL, NULL) = 2873
+sendto(3, "\n\0\0\0\4SCHEMATA\0", 14, 0, NULL, 0) = 14
+recvfrom(3, "Q\0\0\1\3def\22information_schema\10SCHE"..., 16384, 0, NULL, NULL) = 573
+sendto(3, "\25\0\0\0\4SCHEMATA_EXTENSIONS\0", 25, 0, NULL, 0) = 25
+recvfrom(3, "g\0\0\1\3def\22information_schema\23SCHE"..., 16384, 0, NULL, NULL) = 320
+mmap(NULL, 475136, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fd6253e6000
+sendto(3, "\23\0\0\0\4SCHEMA_PRIVILEGES\0", 23, 0, NULL, 0) = 23
+recvfrom(3, "Y\0\0\1\3def\22information_schema\21SCHE"..., 16384, 0, NULL, NULL) = 522
+sendto(3, "\f\0\0\0\4STATISTICS\0", 16, 0, NULL, 0) = 16
+recvfrom(3, "W\0\0\1\3def\22information_schema\nSTAT"..., 16384, 0, NULL, NULL) = 1549
+sendto(3, "\25\0\0\0\4ST_GEOMETRY_COLUMNS\0", 25, 0, NULL, 0) = 25
+recvfrom(3, "i\0\0\1\3def\22information_schema\23ST_G"..., 16384, 0, NULL, NULL) = 749
+sendto(3, "\36\0\0\0\4ST_SPATIAL_REFERENCE_SYSTEM"..., 34, 0, NULL, 0) = 34
+recvfrom(3, "q\0\0\1\3def\22information_schema\34ST_S"..., 16384, 0, NULL, NULL) = 761
+sendto(3, "\25\0\0\0\4ST_UNITS_OF_MEASURE\0", 25, 0, NULL, 0) = 25
+recvfrom(3, "a\0\0\1\3def\22information_schema\23ST_U"..., 16384, 0, NULL, NULL) = 436
+sendto(3, "\10\0\0\0\4TABLES\0", 12, 0, NULL, 0) = 12
+recvfrom(3, "O\0\0\1\3def\22information_schema\6TABL"..., 16384, 0, NULL, NULL) = 1754
+sendto(3, "\r\0\0\0\4TABLESPACES\0", 17, 0, NULL, 0) = 17
+recvfrom(3, "]\0\0\1\3def\22information_schema\vTABL"..., 16384, 0, NULL, NULL) = 858
+sendto(3, "\30\0\0\0\4TABLESPACES_EXTENSIONS\0", 28, 0, NULL, 0) = 28
+recvfrom(3, "s\0\0\1\3def\22information_schema\26TABL"..., 16384, 0, NULL, NULL) = 255
+sendto(3, "\23\0\0\0\4TABLES_EXTENSIONS\0", 23, 0, NULL, 0) = 23
+recvfrom(3, "e\0\0\1\3def\22information_schema\21TABL"..., 16384, 0, NULL, NULL) = 568
+sendto(3, "\23\0\0\0\4TABLE_CONSTRAINTS\0", 23, 0, NULL, 0) = 23
+recvfrom(3, "o\0\0\1\3def\22information_schema\21TABL"..., 16384, 0, NULL, NULL) = 754
+sendto(3, "\36\0\0\0\4TABLE_CONSTRAINTS_EXTENSION"..., 34, 0, NULL, 0) = 34
+recvfrom(3, "\205\0\0\1\3def\22information_schema\34TABL"..., 16384, 0, NULL, NULL) = 829
+sendto(3, "\22\0\0\0\4TABLE_PRIVILEGES\0", 22, 0, NULL, 0) = 22
+recvfrom(3, "W\0\0\1\3def\22information_schema\20TABL"..., 16384, 0, NULL, NULL) = 609
+sendto(3, "\n\0\0\0\4TRIGGERS\0", 14, 0, NULL, 0) = 14
+recvfrom(3, "W\0\0\1\3def\22information_schema\10TRIG"..., 16384, 0, NULL, NULL) = 2130
+sendto(3, "\21\0\0\0\4USER_ATTRIBUTES\0", 21, 0, NULL, 0) = 21
+recvfrom(3, "O\0\0\1\3def\22information_schema\17USER"..., 16384, 0, NULL, NULL) = 270
+sendto(3, "\21\0\0\0\4USER_PRIVILEGES\0", 21, 0, NULL, 0) = 21
+recvfrom(3, "U\0\0\1\3def\22information_schema\17USER"..., 16384, 0, NULL, NULL) = 403
+sendto(3, "\7\0\0\0\4VIEWS\0", 11, 0, NULL, 0) = 11
+recvfrom(3, "M\0\0\1\3def\22information_schema\5VIEW"..., 16384, 0, NULL, NULL) = 829
+sendto(3, "\24\0\0\0\4VIEW_ROUTINE_USAGE\0", 24, 0, NULL, 0) = 24
+recvfrom(3, "g\0\0\1\3def\22information_schema\22VIEW"..., 16384, 0, NULL, NULL) = 655
+sendto(3, "\22\0\0\0\4VIEW_TABLE_USAGE\0", 22, 0, NULL, 0) = 22
+recvfrom(3, "a\0\0\1\3def\22information_schema\20VIEW"..., 16384, 0, NULL, NULL) = 607
+write(1, "Database changed\n", 17)      = 17
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=127, ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM CONT TSTP WINCH], [], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b62735460, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b627335e0, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b62735490, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGCONT, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b62730ba0, sa_mask=[WINCH], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+ioctl(0, TIOCGWINSZ, {ws_row=34, ws_col=141, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+write(1, "mysql> ", 7)                  = 7
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+read(0, "s", 1)                         = 1
+write(1, "s", 1)                        = 1
+read(0, "h", 1)                         = 1
+write(1, "h", 1)                        = 1
+read(0, "o", 1)                         = 1
+write(1, "o", 1)                        = 1
+read(0, "w", 1)                         = 1
+write(1, "w", 1)                        = 1
+read(0, " ", 1)                         = 1
+write(1, " ", 1)                        = 1
+read(0, "t", 1)                         = 1
+write(1, "t", 1)                        = 1
+read(0, "a", 1)                         = 1
+write(1, "a", 1)                        = 1
+read(0, "b", 1)                         = 1
+write(1, "b", 1)                        = 1
+read(0, "l", 1)                         = 1
+write(1, "l", 1)                        = 1
+read(0, "e", 1)                         = 1
+write(1, "e", 1)                        = 1
+read(0, "s", 1)                         = 1
+write(1, "s", 1)                        = 1
+read(0, ";", 1)                         = 1
+write(1, ";", 1)                        = 1
+read(0, "\n", 1)                        = 1
+write(1, "\n", 1)                       = 1
+ioctl(0, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM CONT TSTP WINCH], [], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x557b62735460, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x557b627335e0, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x557b62735490, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGCONT, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x557b62730ba0, sa_mask=[WINCH], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, NULL, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+times({tms_utime=0, tms_stime=4, tms_cutime=0, tms_cstime=0}) = 1718493454
+sendto(3, "\f\0\0\0\3show tables", 16, 0, NULL, 0) = 16
+recvfrom(3, "\1\0\0\1\1Z\0\0\2\3def\0\6TABLES\6tables\34Tab"..., 16384, 0, NULL, NULL) = 1788
+times({tms_utime=0, tms_stime=4, tms_cutime=0, tms_cstime=0}) = 1718493454
+write(1, "+-------------------------------"..., 42) = 42
+write(1, "| Tables_in_information_schema  "..., 42) = 42
+write(1, "+-------------------------------"..., 42) = 42
+write(1, "| ADMINISTRABLE_ROLE_AUTHORIZATI"..., 42) = 42
+write(1, "| APPLICABLE_ROLES              "..., 42) = 42
+write(1, "| CHARACTER_SETS                "..., 42) = 42
+write(1, "| CHECK_CONSTRAINTS             "..., 42) = 42
+write(1, "| COLLATIONS                    "..., 42) = 42
+write(1, "| COLLATION_CHARACTER_SET_APPLIC"..., 42) = 42
+write(1, "| COLUMNS                       "..., 42) = 42
+write(1, "| COLUMNS_EXTENSIONS            "..., 42) = 42
+write(1, "| COLUMN_PRIVILEGES             "..., 42) = 42
+write(1, "| COLUMN_STATISTICS             "..., 42) = 42
+write(1, "| ENABLED_ROLES                 "..., 42) = 42
+write(1, "| ENGINES                       "..., 42) = 42
+write(1, "| EVENTS                        "..., 42) = 42
+write(1, "| FILES                         "..., 42) = 42
+write(1, "| INNODB_BUFFER_PAGE            "..., 42) = 42
+write(1, "| INNODB_BUFFER_PAGE_LRU        "..., 42) = 42
+write(1, "| INNODB_BUFFER_POOL_STATS      "..., 42) = 42
+write(1, "| INNODB_CACHED_INDEXES         "..., 42) = 42
+write(1, "| INNODB_CMP                    "..., 42) = 42
+write(1, "| INNODB_CMPMEM                 "..., 42) = 42
+write(1, "| INNODB_CMPMEM_RESET           "..., 42) = 42
+write(1, "| INNODB_CMP_PER_INDEX          "..., 42) = 42
+write(1, "| INNODB_CMP_PER_INDEX_RESET    "..., 42) = 42
+write(1, "| INNODB_CMP_RESET              "..., 42) = 42
+write(1, "| INNODB_COLUMNS                "..., 42) = 42
+write(1, "| INNODB_DATAFILES              "..., 42) = 42
+write(1, "| INNODB_FIELDS                 "..., 42) = 42
+write(1, "| INNODB_FOREIGN                "..., 42) = 42
+write(1, "| INNODB_FOREIGN_COLS           "..., 42) = 42
+write(1, "| INNODB_FT_BEING_DELETED       "..., 42) = 42
+write(1, "| INNODB_FT_CONFIG              "..., 42) = 42
+write(1, "| INNODB_FT_DEFAULT_STOPWORD    "..., 42) = 42
+write(1, "| INNODB_FT_DELETED             "..., 42) = 42
+write(1, "| INNODB_FT_INDEX_CACHE         "..., 42) = 42
+write(1, "| INNODB_FT_INDEX_TABLE         "..., 42) = 42
+write(1, "| INNODB_INDEXES                "..., 42) = 42
+write(1, "| INNODB_METRICS                "..., 42) = 42
+write(1, "| INNODB_SESSION_TEMP_TABLESPACE"..., 42) = 42
+write(1, "| INNODB_TABLES                 "..., 42) = 42
+write(1, "| INNODB_TABLESPACES            "..., 42) = 42
+write(1, "| INNODB_TABLESPACES_BRIEF      "..., 42) = 42
+write(1, "| INNODB_TABLESTATS             "..., 42) = 42
+write(1, "| INNODB_TEMP_TABLE_INFO        "..., 42) = 42
+write(1, "| INNODB_TRX                    "..., 42) = 42
+write(1, "| INNODB_VIRTUAL                "..., 42) = 42
+write(1, "| KEYWORDS                      "..., 42) = 42
+write(1, "| KEY_COLUMN_USAGE              "..., 42) = 42
+write(1, "| OPTIMIZER_TRACE               "..., 42) = 42
+write(1, "| PARAMETERS                    "..., 42) = 42
+write(1, "| PARTITIONS                    "..., 42) = 42
+write(1, "| PLUGINS                       "..., 42) = 42
+write(1, "| PROCESSLIST                   "..., 42) = 42
+write(1, "| PROFILING                     "..., 42) = 42
+write(1, "| REFERENTIAL_CONSTRAINTS       "..., 42) = 42
+write(1, "| RESOURCE_GROUPS               "..., 42) = 42
+write(1, "| ROLE_COLUMN_GRANTS            "..., 42) = 42
+write(1, "| ROLE_ROUTINE_GRANTS           "..., 42) = 42
+write(1, "| ROLE_TABLE_GRANTS             "..., 42) = 42
+write(1, "| ROUTINES                      "..., 42) = 42
+write(1, "| SCHEMATA                      "..., 42) = 42
+write(1, "| SCHEMATA_EXTENSIONS           "..., 42) = 42
+write(1, "| SCHEMA_PRIVILEGES             "..., 42) = 42
+write(1, "| STATISTICS                    "..., 42) = 42
+write(1, "| ST_GEOMETRY_COLUMNS           "..., 42) = 42
+write(1, "| ST_SPATIAL_REFERENCE_SYSTEMS  "..., 42) = 42
+write(1, "| ST_UNITS_OF_MEASURE           "..., 42) = 42
+write(1, "| TABLES                        "..., 42) = 42
+write(1, "| TABLESPACES                   "..., 42) = 42
+write(1, "| TABLESPACES_EXTENSIONS        "..., 42) = 42
+write(1, "| TABLES_EXTENSIONS             "..., 42) = 42
+write(1, "| TABLE_CONSTRAINTS             "..., 42) = 42
+write(1, "| TABLE_CONSTRAINTS_EXTENSIONS  "..., 42) = 42
+write(1, "| TABLE_PRIVILEGES              "..., 42) = 42
+write(1, "| TRIGGERS                      "..., 42) = 42
+write(1, "| USER_ATTRIBUTES               "..., 42) = 42
+write(1, "| USER_PRIVILEGES               "..., 42) = 42
+write(1, "| VIEWS                         "..., 42) = 42
+write(1, "| VIEW_ROUTINE_USAGE            "..., 42) = 42
+write(1, "| VIEW_TABLE_USAGE              "..., 42) = 42
+write(1, "+-------------------------------"..., 42) = 42
+write(1, "79 rows in set (0.00 sec)\n", 26) = 26
+write(1, "\n", 1)                       = 1
+stat("/etc/localtime", {st_mode=S_IFREG|0644, st_size=127, ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+rt_sigprocmask(SIG_BLOCK, [HUP INT QUIT TERM CONT TSTP WINCH], [], 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b62735460, sa_mask=[INT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b627335e0, sa_mask=[QUIT], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b62735490, sa_mask=[HUP], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGCONT, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x557b62835b40, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fd625e0b730}, {sa_handler=0x557b62730ba0, sa_mask=[WINCH], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fd625e0b730}, 8) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], [], 8) = 0
+ioctl(0, TIOCGWINSZ, {ws_row=34, ws_col=141, ws_xpixel=0, ws_ypixel=0}) = 0
+rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+write(1, "mysql> ", 7)                  = 7
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+read(0,  <detached ...>
