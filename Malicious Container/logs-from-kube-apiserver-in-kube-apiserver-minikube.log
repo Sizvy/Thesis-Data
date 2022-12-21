@@ -1,0 +1,142 @@
+I1215 06:35:47.982045       1 server.go:565] external host was not specified, using 192.168.49.2
+I1215 06:35:47.982874       1 server.go:172] Version: v1.23.3
+I1215 06:35:48.548882       1 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+I1215 06:35:48.548904       1 plugins.go:161] Loaded 11 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,CertificateSubjectRestriction,ValidatingAdmissionWebhook,ResourceQuota.
+I1215 06:35:48.549672       1 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+I1215 06:35:48.549688       1 plugins.go:161] Loaded 11 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,CertificateSubjectRestriction,ValidatingAdmissionWebhook,ResourceQuota.
+I1215 06:35:48.551292       1 shared_informer.go:240] Waiting for caches to sync for node_authorizer
+W1215 06:35:48.615673       1 genericapiserver.go:538] Skipping API apiextensions.k8s.io/v1beta1 because it has no resources.
+I1215 06:35:48.616881       1 instance.go:274] Using reconciler: lease
+W1215 06:35:49.349071       1 genericapiserver.go:538] Skipping API authentication.k8s.io/v1beta1 because it has no resources.
+W1215 06:35:49.350943       1 genericapiserver.go:538] Skipping API authorization.k8s.io/v1beta1 because it has no resources.
+W1215 06:35:49.368708       1 genericapiserver.go:538] Skipping API certificates.k8s.io/v1beta1 because it has no resources.
+W1215 06:35:49.370665       1 genericapiserver.go:538] Skipping API coordination.k8s.io/v1beta1 because it has no resources.
+W1215 06:35:49.377431       1 genericapiserver.go:538] Skipping API networking.k8s.io/v1beta1 because it has no resources.
+W1215 06:35:49.381378       1 genericapiserver.go:538] Skipping API node.k8s.io/v1alpha1 because it has no resources.
+W1215 06:35:49.389342       1 genericapiserver.go:538] Skipping API rbac.authorization.k8s.io/v1beta1 because it has no resources.
+W1215 06:35:49.389371       1 genericapiserver.go:538] Skipping API rbac.authorization.k8s.io/v1alpha1 because it has no resources.
+W1215 06:35:49.391321       1 genericapiserver.go:538] Skipping API scheduling.k8s.io/v1beta1 because it has no resources.
+W1215 06:35:49.391355       1 genericapiserver.go:538] Skipping API scheduling.k8s.io/v1alpha1 because it has no resources.
+W1215 06:35:49.397565       1 genericapiserver.go:538] Skipping API storage.k8s.io/v1alpha1 because it has no resources.
+W1215 06:35:49.402856       1 genericapiserver.go:538] Skipping API flowcontrol.apiserver.k8s.io/v1alpha1 because it has no resources.
+W1215 06:35:49.407861       1 genericapiserver.go:538] Skipping API apps/v1beta2 because it has no resources.
+W1215 06:35:49.407888       1 genericapiserver.go:538] Skipping API apps/v1beta1 because it has no resources.
+W1215 06:35:49.410553       1 genericapiserver.go:538] Skipping API admissionregistration.k8s.io/v1beta1 because it has no resources.
+I1215 06:35:49.415242       1 plugins.go:158] Loaded 12 mutating admission controller(s) successfully in the following order: NamespaceLifecycle,LimitRanger,ServiceAccount,NodeRestriction,TaintNodesByCondition,Priority,DefaultTolerationSeconds,DefaultStorageClass,StorageObjectInUseProtection,RuntimeClass,DefaultIngressClass,MutatingAdmissionWebhook.
+I1215 06:35:49.415274       1 plugins.go:161] Loaded 11 validating admission controller(s) successfully in the following order: LimitRanger,ServiceAccount,PodSecurity,Priority,PersistentVolumeClaimResize,RuntimeClass,CertificateApproval,CertificateSigning,CertificateSubjectRestriction,ValidatingAdmissionWebhook,ResourceQuota.
+W1215 06:35:49.453654       1 genericapiserver.go:538] Skipping API apiregistration.k8s.io/v1beta1 because it has no resources.
+I1215 06:35:50.906372       1 dynamic_cafile_content.go:156] "Starting controller" name="request-header::/var/lib/minikube/certs/front-proxy-ca.crt"
+I1215 06:35:50.906430       1 dynamic_serving_content.go:131] "Starting controller" name="serving-cert::/var/lib/minikube/certs/apiserver.crt::/var/lib/minikube/certs/apiserver.key"
+I1215 06:35:50.906544       1 secure_serving.go:266] Serving securely on [::]:8443
+I1215 06:35:50.906583       1 tlsconfig.go:240] "Starting DynamicServingCertificateController"
+I1215 06:35:50.906378       1 dynamic_cafile_content.go:156] "Starting controller" name="client-ca-bundle::/var/lib/minikube/certs/ca.crt"
+I1215 06:35:50.908481       1 apf_controller.go:317] Starting API Priority and Fairness config controller
+I1215 06:35:50.912398       1 customresource_discovery_controller.go:209] Starting DiscoveryController
+I1215 06:35:50.912446       1 available_controller.go:491] Starting AvailableConditionController
+I1215 06:35:50.912450       1 cache.go:32] Waiting for caches to sync for AvailableConditionController controller
+I1215 06:35:50.913278       1 dynamic_serving_content.go:131] "Starting controller" name="aggregator-proxy-cert::/var/lib/minikube/certs/front-proxy-client.crt::/var/lib/minikube/certs/front-proxy-client.key"
+I1215 06:35:50.926582       1 apiservice_controller.go:97] Starting APIServiceRegistrationController
+I1215 06:35:50.926678       1 cache.go:32] Waiting for caches to sync for APIServiceRegistrationController controller
+I1215 06:35:50.927019       1 cluster_authentication_trust_controller.go:440] Starting cluster_authentication_trust_controller controller
+I1215 06:35:50.927112       1 shared_informer.go:240] Waiting for caches to sync for cluster_authentication_trust_controller
+I1215 06:35:50.927742       1 autoregister_controller.go:141] Starting autoregister controller
+I1215 06:35:50.927760       1 cache.go:32] Waiting for caches to sync for autoregister controller
+I1215 06:35:50.927781       1 controller.go:83] Starting OpenAPI AggregationController
+I1215 06:35:50.942852       1 dynamic_cafile_content.go:156] "Starting controller" name="client-ca-bundle::/var/lib/minikube/certs/ca.crt"
+I1215 06:35:50.959735       1 controller.go:85] Starting OpenAPI controller
+I1215 06:35:50.961173       1 naming_controller.go:291] Starting NamingConditionController
+I1215 06:35:50.961212       1 establishing_controller.go:76] Starting EstablishingController
+I1215 06:35:50.961356       1 nonstructuralschema_controller.go:192] Starting NonStructuralSchemaConditionController
+I1215 06:35:50.961396       1 apiapproval_controller.go:186] Starting KubernetesAPIApprovalPolicyConformantConditionController
+I1215 06:35:50.961455       1 crd_finalizer.go:266] Starting CRDFinalizer
+I1215 06:35:50.968926       1 dynamic_cafile_content.go:156] "Starting controller" name="request-header::/var/lib/minikube/certs/front-proxy-ca.crt"
+I1215 06:35:50.969124       1 crdregistration_controller.go:111] Starting crd-autoregister controller
+I1215 06:35:50.969141       1 shared_informer.go:240] Waiting for caches to sync for crd-autoregister
+I1215 06:35:51.009636       1 apf_controller.go:322] Running API Priority and Fairness config worker
+I1215 06:35:51.012512       1 cache.go:39] Caches are synced for AvailableConditionController controller
+I1215 06:35:51.023538       1 controller.go:611] quota admission added evaluator for: namespaces
+I1215 06:35:51.026792       1 cache.go:39] Caches are synced for APIServiceRegistrationController controller
+I1215 06:35:51.027644       1 shared_informer.go:247] Caches are synced for cluster_authentication_trust_controller 
+I1215 06:35:51.028039       1 cache.go:39] Caches are synced for autoregister controller
+I1215 06:35:51.051362       1 shared_informer.go:247] Caches are synced for node_authorizer 
+I1215 06:35:51.069297       1 shared_informer.go:247] Caches are synced for crd-autoregister 
+I1215 06:35:51.910309       1 controller.go:132] OpenAPI AggregationController: action for item : Nothing (removed from the queue).
+I1215 06:35:51.910351       1 controller.go:132] OpenAPI AggregationController: action for item k8s_internal_local_delegation_chain_0000000000: Nothing (removed from the queue).
+I1215 06:35:51.921825       1 storage_scheduling.go:93] created PriorityClass system-node-critical with value 2000001000
+I1215 06:35:51.924815       1 storage_scheduling.go:93] created PriorityClass system-cluster-critical with value 2000000000
+I1215 06:35:51.924835       1 storage_scheduling.go:109] all system priority classes are created successfully or already exist.
+I1215 06:35:52.306453       1 controller.go:611] quota admission added evaluator for: roles.rbac.authorization.k8s.io
+I1215 06:35:52.339704       1 controller.go:611] quota admission added evaluator for: rolebindings.rbac.authorization.k8s.io
+I1215 06:35:52.436079       1 alloc.go:329] "allocated clusterIPs" service="default/kubernetes" clusterIPs=map[IPv4:10.96.0.1]
+W1215 06:35:52.441787       1 lease.go:233] Resetting endpoints for master service "kubernetes" to [192.168.49.2]
+I1215 06:35:52.442647       1 controller.go:611] quota admission added evaluator for: endpoints
+I1215 06:35:52.446163       1 controller.go:611] quota admission added evaluator for: endpointslices.discovery.k8s.io
+I1215 06:35:53.114728       1 controller.go:611] quota admission added evaluator for: serviceaccounts
+I1215 06:35:54.065070       1 controller.go:611] quota admission added evaluator for: deployments.apps
+I1215 06:35:54.076561       1 alloc.go:329] "allocated clusterIPs" service="kube-system/kube-dns" clusterIPs=map[IPv4:10.96.0.10]
+I1215 06:35:54.086337       1 controller.go:611] quota admission added evaluator for: daemonsets.apps
+I1215 06:35:54.274798       1 controller.go:611] quota admission added evaluator for: leases.coordination.k8s.io
+I1215 06:36:07.255031       1 controller.go:611] quota admission added evaluator for: controllerrevisions.apps
+I1215 06:36:07.404892       1 controller.go:611] quota admission added evaluator for: replicasets.apps
+I1215 06:36:07.990291       1 controller.go:611] quota admission added evaluator for: events.events.k8s.io
+I1215 06:36:25.047291       1 alloc.go:329] "allocated clusterIPs" service="default/mongo-service" clusterIPs=map[IPv4:10.97.174.173]
+I1215 06:36:29.596621       1 alloc.go:329] "allocated clusterIPs" service="default/webapp-service" clusterIPs=map[IPv4:10.105.221.186]
+I1215 06:43:45.784662       1 alloc.go:329] "allocated clusterIPs" service="kubernetes-dashboard/kubernetes-dashboard" clusterIPs=map[IPv4:10.98.23.93]
+I1215 06:43:45.804328       1 alloc.go:329] "allocated clusterIPs" service="kubernetes-dashboard/dashboard-metrics-scraper" clusterIPs=map[IPv4:10.102.65.87]
+E1215 06:46:56.090951       1 upgradeaware.go:409] Error proxying data from client to backend: write tcp 192.168.49.2:60430->192.168.49.2:10250: write: broken pipe
+E1215 06:53:50.461876       1 upgradeaware.go:409] Error proxying data from client to backend: write tcp 192.168.49.2:42898->192.168.49.2:10250: write: broken pipe
+W1215 06:53:55.586163       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+W1215 07:03:42.682580       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+W1215 07:18:08.801073       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+E1215 07:19:29.608177       1 authentication.go:63] "Unable to authenticate the request" err="invalid bearer token"
+W1215 07:27:47.134840       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+E1215 07:35:55.410568       1 authentication.go:63] "Unable to authenticate the request" err="invalid bearer token"
+E1215 07:36:05.469775       1 authentication.go:63] "Unable to authenticate the request" err="invalid bearer token"
+W1215 07:59:23.292958       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+W1215 08:08:47.422244       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+E1215 10:32:02.127422       1 authentication.go:63] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E1215 10:32:02.127444       1 authentication.go:63] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E1215 10:32:15.261975       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 10:32:15.261478458 +0000 UTC m=+8256.588017415 to 2022-12-15 10:32:15.261478439 +0000 UTC m=+8256.588017386 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:28:00.815996       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:28:00.815989249 +0000 UTC m=+8333.538617073 to 2022-12-15 14:28:00.815987802 +0000 UTC m=+8333.538615626 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:28:30.825765       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:28:30.825757559 +0000 UTC m=+8363.548385373 to 2022-12-15 14:28:30.825756899 +0000 UTC m=+8363.548384713 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:29:30.853969       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:29:30.853961236 +0000 UTC m=+8423.576589060 to 2022-12-15 14:29:30.853960031 +0000 UTC m=+8423.576587845 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:29:30.856640       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:29:30.856630476 +0000 UTC m=+8423.579258290 to 2022-12-15 14:29:30.85662962 +0000 UTC m=+8423.579257444 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:31:00.898397       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:31:00.898391569 +0000 UTC m=+8513.621019383 to 2022-12-15 14:31:00.89839072 +0000 UTC m=+8513.621018534 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:32:30.932057       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:32:30.932050567 +0000 UTC m=+8603.654678391 to 2022-12-15 14:32:30.932049802 +0000 UTC m=+8603.654677626 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:33:00.944311       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:33:00.944303638 +0000 UTC m=+8633.666931453 to 2022-12-15 14:33:00.944303264 +0000 UTC m=+8633.666931078 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:33:30.957201       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:33:30.95719364 +0000 UTC m=+8663.679821454 to 2022-12-15 14:33:30.957192875 +0000 UTC m=+8663.679820689 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:34:00.988393       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:34:00.988386472 +0000 UTC m=+8693.711014286 to 2022-12-15 14:34:00.988385432 +0000 UTC m=+8693.711013256 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:34:00.988459       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:34:00.988456773 +0000 UTC m=+8693.711084587 to 2022-12-15 14:34:00.988456466 +0000 UTC m=+8693.711084290 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:34:31.000022       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:34:31.000016087 +0000 UTC m=+8723.722643901 to 2022-12-15 14:34:31.000014771 +0000 UTC m=+8723.722642595 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:34:31.012996       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:34:31.012988819 +0000 UTC m=+8723.735616633 to 2022-12-15 14:34:31.012988751 +0000 UTC m=+8723.735616565 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:35:01.022091       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:35:01.022082614 +0000 UTC m=+8753.744710428 to 2022-12-15 14:35:01.022082506 +0000 UTC m=+8753.744710330 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:38:31.175423       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:38:31.175416668 +0000 UTC m=+8963.898044482 to 2022-12-15 14:38:31.17541594 +0000 UTC m=+8963.898043754 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:39:31.215142       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:39:31.21513502 +0000 UTC m=+9023.937762834 to 2022-12-15 14:39:31.215134766 +0000 UTC m=+9023.937762580 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:40:01.227912       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:40:01.227902188 +0000 UTC m=+9053.950530002 to 2022-12-15 14:40:01.227901192 +0000 UTC m=+9053.950529016 for labelValues=[]string{"executing", "readOnly"}
+W1215 14:40:20.966976       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+E1215 14:40:31.240819       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:40:31.24081186 +0000 UTC m=+9083.963439674 to 2022-12-15 14:40:31.240811262 +0000 UTC m=+9083.963439086 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:40:31.242100       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:40:31.242093853 +0000 UTC m=+9083.964721667 to 2022-12-15 14:40:31.242093705 +0000 UTC m=+9083.964721519 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:42:01.288581       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:42:01.288575943 +0000 UTC m=+9174.011203757 to 2022-12-15 14:42:01.288574573 +0000 UTC m=+9174.011202397 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:45:01.411624       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:45:01.411618024 +0000 UTC m=+9354.134245838 to 2022-12-15 14:45:01.411617855 +0000 UTC m=+9354.134245669 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:46:01.445353       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:46:01.445345535 +0000 UTC m=+9414.167973359 to 2022-12-15 14:46:01.445345291 +0000 UTC m=+9414.167973115 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:47:01.475868       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:47:01.47586177 +0000 UTC m=+9474.198489584 to 2022-12-15 14:47:01.475860611 +0000 UTC m=+9474.198488425 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:48:31.526772       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:48:31.526765525 +0000 UTC m=+9564.249393339 to 2022-12-15 14:48:31.526765171 +0000 UTC m=+9564.249392995 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:48:31.527083       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:48:31.527078311 +0000 UTC m=+9564.249706126 to 2022-12-15 14:48:31.527077072 +0000 UTC m=+9564.249704886 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:48:31.527540       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:48:31.527527393 +0000 UTC m=+9564.250155217 to 2022-12-15 14:48:31.527527175 +0000 UTC m=+9564.250155019 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:49:01.538050       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:49:01.538035941 +0000 UTC m=+9594.260663755 to 2022-12-15 14:49:01.538035843 +0000 UTC m=+9594.260663657 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:50:01.580234       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:50:01.580228881 +0000 UTC m=+9654.302856705 to 2022-12-15 14:50:01.58022737 +0000 UTC m=+9654.302855194 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:50:01.581070       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:50:01.581063376 +0000 UTC m=+9654.303691200 to 2022-12-15 14:50:01.581062286 +0000 UTC m=+9654.303690100 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:51:01.618610       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:51:01.618602091 +0000 UTC m=+9714.341229905 to 2022-12-15 14:51:01.618601116 +0000 UTC m=+9714.341228930 for labelValues=[]string{"executing", "readOnly"}
+E1215 14:51:31.639646       1 sample_and_watermark.go:200] Time went backwards from 2022-12-15 14:51:31.639636871 +0000 UTC m=+9744.362264695 to 2022-12-15 14:51:31.639636864 +0000 UTC m=+9744.362264678 for labelValues=[]string{"executing", "readOnly"}
+E1219 07:00:58.693210       1 authentication.go:63] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+E1219 07:00:58.693228       1 authentication.go:63] "Unable to authenticate the request" err="[invalid bearer token, service account token has expired]"
+W1219 07:52:52.419328       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+W1219 07:58:28.331271       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+W1219 08:08:24.405660       1 watcher.go:229] watch chan error: etcdserver: mvcc: required revision has been compacted
+E1219 09:07:16.946295       1 wrap.go:54] timeout or abort while handling: method=GET URI="/api/v1/namespaces/kube-system/secrets" audit-ID="cedf9e63-55eb-4ad7-83f0-0c7625a2ac68"
+E1219 09:07:16.947949       1 timeout.go:137] post-timeout activity - time-elapsed: 35.667µs, GET "/api/v1/namespaces/kube-system/secrets" result: <nil>
+E1219 09:07:50.841279       1 wrap.go:54] timeout or abort while handling: method=GET URI="/api/v1/namespaces/kube-system/secrets" audit-ID="25401049-00cb-41a8-9ed3-f0e03a1acf13"
+E1219 09:07:50.843673       1 writers.go:117] apiserver was unable to write a JSON response: http2: stream closed
+E1219 09:07:50.843731       1 status.go:71] apiserver received an error that is not an metav1.Status: &errors.errorString{s:"http2: stream closed"}: http2: stream closed
+E1219 09:07:50.846297       1 writers.go:130] apiserver was unable to write a fallback JSON response: http: Handler timeout
+E1219 09:07:50.847591       1 timeout.go:137] post-timeout activity - time-elapsed: 6.267504ms, GET "/api/v1/namespaces/kube-system/secrets" result: <nil>
